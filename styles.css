@@ -1,0 +1,151 @@
+/* ==========================================================================
+AUTHOR: NATHAN GRIFFIN
+
+========================================================================== */
+/* ==========================================================================
+CONTENT SELECTORS
+========================================================================== */
+* {
+	box-sizing: content-box;
+	-webkit-box-align: center;
+}
+body {
+		background: url("./images/desert.jpg") no-repeat #cc9b33 fixed;
+		color: white;
+		text-align: center;
+		text-wrap: avoid;
+		font-family:'TNG_Title',sans-serif;
+		font-weight: 100;
+		border:solid 15px black;
+		padding: 0;
+}
+
+/* ==========================================================================
+HTML5 display definitions
+LIST STYLES
+========================================================================== */	
+header li{
+	display: inline;
+
+}
+nav li{
+	list-style-type: none;
+	background-color: black;
+
+}
+/* ==========================================================================
+ASIDE STYLES
+========================================================================== */
+aside{
+	float: left;
+	width: 20%;
+}
+aside li{
+	list-style-type: none;
+	display: block;
+	padding-bottom: 10px;
+}
+/* ==========================================================================
+HEADING STYLES
+========================================================================== */	
+h1{
+    border:5px solid;
+	text-align: center;
+    margin: 10%;
+}
+/* ==========================================================================
+IMAGE STYLES
+========================================================================== */
+img{
+    display: inline-block;
+	border-radius: 100%;
+	border:15px solid black;
+    padding:0;
+
+}
+/* ==========================================================================
+NAV STYLES
+========================================================================== */
+nav a:link    {color:#0b5de2;font-size: 100%; text-decoration: none}
+nav	a:visited {color:red;font-size: 100%; text-decoration: none}
+nav	a:hover   {color:yellow; font-size: 100%; text-decoration: underline}
+nav	a:active  {color:green; background-color:transparent; text-decoration: overline}
+/* ==========================================================================
+BUTTON STYLES
+========================================================================== */
+/* ==========================================================================
+ROUND BUTTON
+========================================================================== */
+	.round-button {
+	    display:inline-block;
+        position: relative;
+        padding:0 0 0 5% ;/*spacing between buttons*/
+        width:40%;
+}
+	.round-button-circle {
+        position: relative;
+		width: 100%;
+    	height:100%;
+    	padding-bottom: 100%;
+        border-radius: 50%;
+    	border:15px solid #000000;
+        overflow:visible;
+        background: #9fafc4;
+    }
+	.round-button-circle:hover {
+        position: relative;
+		background: url("./images/moon.png") no-repeat #30588e center;
+		background-size: 114% 114%;/*114 suggested size of the hover moon within the border*/
+        transition: 1s;
+        cursor: pointer;
+    }
+	.round-button a{
+        position:relative;
+        float: left;
+    	width:100%;
+        height:100%;
+		/*horizontal position of individual button pictures  top 50% to align*/
+        /*vertical position of individual button pictures left 50% to align*/
+		padding: 50% 0 0 50%;
+        line-height:1em;
+    	color:#e2eaf3;
+        font-family: "TNG_Title",sans-serif;
+        font-size:1.5em;
+        font-weight:bold;
+        text-decoration: line-through;
+		text-align:center;
+    }
+	.round-button img {
+		position: inherit;
+		width:100%;
+		height:100%;
+		opacity: 0.6;/*optimal at 0.6*/
+		filter: alpha(opacity=60);
+		-webkit-appearance:none;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%,-50%);/*size of circle (-50%, -50%) to align*/
+		background-size:100% 100%;
+	}
+	.round-button-section{
+		position: relative;
+        float:right;
+	}
+	.caption {
+	    display: INLINE;
+	    /*text-indent: 50%;*/
+	}
+footer {
+    text-align: right;
+	padding: 2%;
+	/*UNUSED SECTION for footer text and links*/
+}
+#main {
+	background-color: black;
+	padding:0 10px 0 10px;
+	margin-left: 10%;
+}
+@font-face {
+    font-family: 'TNG_Title'; /*a name to be used later*/
+    src: url("fonts/TNG_Title.ttf"); /*URL to font*/
+}
